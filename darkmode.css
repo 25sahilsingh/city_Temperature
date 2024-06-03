@@ -1,0 +1,10 @@
+.darkmode {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: rgb(37, 37, 37);
+}
+.darkmode #sh_result {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: aliceblue;
+}
