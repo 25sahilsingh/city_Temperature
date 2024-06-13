@@ -15,6 +15,30 @@ button.addEventListener("click", async () => {
   const result = await getData(a);
   console.log(result);
   const sh_result = document.getElementById("sh_result");
-  sh_result.innerText =
-    result.location.name + "==>" + result.current.condition.text;
+  sh_result.innerHTML =
+    "<div id='temp_info'><div>Location==>" +
+    result.location.name +
+    "," +
+    result.location.region +
+    "," +
+    result.location.country +
+    "<br>" +
+    "Current temp==>" +
+    result.current.temp_c +
+    "°C/" +
+    result.current.temp_f +
+    "F" +
+    "<br>Condition==>" +
+    result.current.condition.text +
+    "<br>" +
+    "Wind speed==>" +
+    result.current.wind_kph +
+    "kph" +
+    "<br>" +
+    "Wind dir==>" +
+    result.current.wind_dir +
+    "</div>" +
+    '<div id="icon"><img src="http:' +
+    result.current.condition.icon +
+    '" alt="Weather Icon" ></div></div>';
 });
