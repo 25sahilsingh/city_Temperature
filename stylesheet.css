@@ -16,3 +16,6 @@ body {
   height: 64;
   width: 64;
 }
+#main {
+  margin: 20px 20px;
+}
